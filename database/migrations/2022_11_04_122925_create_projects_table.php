@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string('name');
             $table->string('slug')->unique();
             $table->enum('project_title', ['Prestige', 'Total-Environment','Other']);
-            $table->enum('type',['House','Flat','Villa','Appartment']);
+            $table->enum('type  ',['House','Flat','Villa','Appartment']);
             $table->string('location');
             $table->string('price')->nullable();
             $table->string('size')->nullable();

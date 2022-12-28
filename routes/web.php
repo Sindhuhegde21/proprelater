@@ -58,4 +58,6 @@ Route::middleware(['auth:sanctum','verified','authadmin'])->group(function () {
     Route::get('/admin/projects', Projects::class)->name('admin.projects');
     Route::get('/admin/add-projects', AddProject::class)->name('admin.addprojects');
     Route::get('/admin/edit-projects/{project_id}', EditProject::class)->name('admin.editprojects');
+
+   
 });

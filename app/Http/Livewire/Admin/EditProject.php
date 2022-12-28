@@ -15,6 +15,7 @@ class EditProject extends Component
     public $slug;
     public $project_title;
     public $type;
+    public $property;
     public $location;
     public $price;
     public $size;
@@ -44,6 +45,7 @@ class EditProject extends Component
         $this->slug = $project->slug;
         $this->project_title = $project->project_title;
         $this->type = $project->type;
+        $this->property = $project->property;
         $this->price = $project->price;
         $this->size = $project->size;
         $this->location = $project->location;
@@ -169,7 +171,7 @@ class EditProject extends Component
                 $image->storeAs('projects', $imgName);
                 $imagesname = $imagesname . ',' . $imgName;
             }
-            // $project->images = $imagesname;
+            $project->images = $imagesname;
         }
         $project->rera_number = $this->rera_number;
         $project->specification = $this->specification;
@@ -177,8 +179,8 @@ class EditProject extends Component
 
         if ($this->new_masterplan) {
             unlink('assets/images/projects'.'/' .$project->master_plan);
-            $imagename1 = Carbon::now()->timestamp . '.' . $this->image->extension();
-            $this->master_plan->storeAs('projects', $imagename1);
+            $imagename1 = Carbon::now()->timestamp . '.' . $this->new_masterplan->extension();
+            $this->new_masterplan->storeAs('masterplans', $imagename1);
             $project->master_plan = $imagename1;
         }
 
@@ -187,17 +189,18 @@ class EditProject extends Component
                 $floor_plan = explode(',', $project->floor_plan);
                 foreach ($floor_plan as $image) {
                     if ($image) {
-                        unlink('assets/images/projects'.'/'.$project->floor_plan);
+                        unlink('assets/images/floorplans'.'/'.$project->floor_plan);
                     }
                 }
             }
             $imagesname2 = '';
             foreach ($this->new_floorplan as $key => $image) {
-                $imgname2 = Carbon::now()->timestamp . $key . '.' . $image->extension();
-                $image->storeAs('projects', $imgname2);
-                $imagesname2 = $imagesname2 . ',' . $imgname2;
+                $imgName2 = Carbon::now()->timestamp . $key . '.' . $image->extension();
+                $image->storeAs('floorplans', $imgName2);
+                $imagesname2 = $imagesname2 . ',' . $imgName2;
             }
-            // $project->floor_plan = $imagesname2;
+            $project->floor_plan = $imagesname2;
+            
         }
         $project->number_of_units = $this->number_of_units;
         $project->possession = $this->possession;

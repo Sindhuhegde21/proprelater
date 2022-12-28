@@ -9,7 +9,7 @@
                                 Edit Project
                             </div>
                             <div class="col-md-6">
-                                <a href="{{route('admin.projects')}}" class="btn-sm btn-dark float-right">All
+                                <a href="{{route('admin.projects')}}" class="btn btn-sm btn-primary text-white float-end">All
                                     Projects</a>
                             </div>
                         </div>
@@ -68,6 +68,20 @@
                                     @error('type') <small class="text-primary">{{$message}}</small> @enderror
                                 </div>
                             </div>
+                            
+                            {{-- <div class="form-group row mb-2">
+                                <label for="" class="col-md-4 text-end align-self-center">Category :</label>
+                                <div class="col-md-4">
+                                    <select id="" wire:model='category' class="form-control">
+                                        <option value="">Select</option>
+                                        <option value="House">House</option>
+                                        <option value="Flat">Flat</option>
+                                        <option value="Appartment">Appartment</option>
+                                        <option value="Villa">Villa</option>
+                                    </select>
+                                    @error('category') <small class="text-primary">{{$message}}</small> @enderror
+                                </div>
+                            </div> --}}
                             <div class="form-group row mb-2">
                                 <label for="" class="col-md-4 text-end align-self-center">Price :</label>
                                 <div class="col-md-4">

@@ -38,7 +38,7 @@
                                     <tr>
                                         <th>ID</th>
                                         <th>Name</th>
-                                        <th>Project titile</th>
+                                        <th>Project title</th>
                                         <th>Project type</th>
                                         <th>price</th>
                                         <th>size</th>
@@ -63,7 +63,7 @@
                                         <td>{{$project->id}}</td>
                                         <td>{{$project->name}}</td>
                                         <td>{{$project->project_title}}</td>
-                                        <td>{{$project->project_type}}</td>
+                                        <td>{{$project->type}}</td>
                                         <td>{{$project->price}}</td>
                                         <td>{{$project->size}}</td>
                                         <td>{{$project->location}}</td>
@@ -74,7 +74,7 @@
                                         <td>{{$project->specification}}</td>
                                         <td>{{$project->number_of_units}}</td>
                                         <td>{{$project->possession}}</td>
-                                        <td>{{$project->about_the_poject}}</td>
+                                        <td>{{$project->about_the_project}}</td>
                                         <td>{{$project->master_plan}}</td>
                                         <td>{{$project->floor_plan}}</td>
                                         <td>{{$project->unit}}</td>

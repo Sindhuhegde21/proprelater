@@ -16,10 +16,10 @@
         </div>
     </div>
 
-    <div id="ContactUs" class="my-2 my-md-3 bg-danger">
+    <div id="ContactUs" class="my-2 my-md-3 bg-info">
         <div class="container">
             <div class="row">
-                <div class="col-md-5 align-self-center">
+                {{-- <div class="col-md-5 align-self-center">
                     <div class="bg-info p-3 shadow">
                         <h4>Chekkera Properties</h4>
                         <div class="">
@@ -40,9 +40,10 @@
                         <a href="#" class="text-primary"><i class="fa-brands fa-square-twitter fs-1 px-2"></i></a>
                         <a href="#" class="text-primary"><i class="fa-brands fa-square-instagram fs-1 px-2"></i></a>
                         </div>
-                </div>
+                </div> --}}
                 <div class="col-md-6">
-                    <div class="p-3 mt-3">
+                    {{-- <h2 class="text-center text-primary py-4">Contact-details</h2> --}}
+                    <div class="p-3 mt-3 justify-content-center">
                         <div class="input-group mb-3">
                             <span class="input-group-text" id="name"><img
                                     src="{{asset('assets/images/contact/name.png')}}" alt=""></span>
@@ -80,7 +81,7 @@
                         @error('message') <span class="text-danger">{{ $message }}</span> @enderror
 
                         <div class="mb-3 text-center">
-                            <button type="submit" class="btn btn-primary px-4 rounded-pill">Start Chat</button>
+                            <button type="submit" class="btn btn-primary px-4 rounded-pill">Submit</button>
                         </div>
                         </form>
                     </div>

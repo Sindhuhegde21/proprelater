@@ -4,8 +4,7 @@ $secondary: #f58634;
 $light: #dbdbdb;
 $warning: #ff6700;
 $muted: #f5f5f5;
-$info: #f3f3f3;
-$danger: #f7f4f4;
+$info: #F2EFEE;
 
 //import the functions & Variables
 @import "../../../node_modules/bootstrap/scss/functions";
@@ -68,7 +67,7 @@ $black: #000000;
 #NavBar {
     .nav-link {
         text-transform: uppercase;
-        padding: 10px 20px;
+        padding: 10px 17px;
         font-weight: 600;
         color: $primary;
         &.active {
@@ -99,13 +98,12 @@ $black: #000000;
         background-size: cover;
     }
 }
-#PropertyListing {
-    .line {
-        width: 4%;
-        border-top: 5px solid $secondary;
-        margin-bottom: 0.7rem;
-    }
-}
+// #PropertyListing {
+//     .prop-custom{
+//         height:456px;
+//         border: 1px;
+//     }
+// }
 #FreeEvaluation {
     .line {
         width: 12%;

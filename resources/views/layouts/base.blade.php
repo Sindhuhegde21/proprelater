@@ -27,7 +27,7 @@
 <body>
     <nav class="navbar navbar-expand-lg bg-light sticky-top shadow-sm" id="NavBar">
         <div class="container">
-            <a class="navbar-brand" href="/"><img src="{{ asset('assets/images/logo.png') }}" alt=""
+            <a class="navbar-brand" href="/"><img src="{{ asset('assets/images/logo-1.png') }}" alt=""
                     class="img-fluid"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
                 aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
@@ -39,7 +39,7 @@
                         <a class="nav-link {{ Request::is('/') ? 'active' : '' }}" aria-current="page" href="/">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link {{ Request::is('aboutus') ? 'active' : '' }}" aria-current="page" href="#">About Us</a>
+                        <a class="nav-link {{ Request::is('about') ? 'active' : '' }}" aria-current="page" href="{{ route('about') }}">About Us</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -53,7 +53,7 @@
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
                            Carrier
                         </a>
@@ -118,8 +118,7 @@
                 <div class="col-md-4">
                     <div class="text-white">
                         <h3>About Us</h3>
-                        <p>Chekkera Properties is a RERA registered Real Estate company established in the year 2017.
-                        </p>
+                        <p></p>
                     </div>
                 </div>
                 <div class="col-md-4">
@@ -127,21 +126,18 @@
                         <h3>Contact Us</h3>
                         <div class="text-white">
                             <ul class="list-unstyled">
-                                <li class="py-1"><i class="fa-solid fa-location-dot"></i> VG-013, First Floor, Pruksa
-                                    Silvana, Budigere Cross, Old Madras Road Bengaluru, Karnataka 560049</li>
-                                <li class="pt-2"><i class="fa-solid fa-phone-volume"></i><a href="tel:09606267947"
-                                        class="text-decoration-none text-white"> +91 80 4850 5759</a>
+                                <li class="py-1"><i class="fa-solid fa-location-dot"></i> </li>
+                                <li class="pt-2"><i class="fa-solid fa-phone-volume"></i><a href="#"
+                                        class="text-decoration-none text-white"></a>
                                 </li>
-                                <li><i class="fa-solid fa-envelope"></i><a href="mailto:prasad@chekkeraproperties.com"
-                                        class="text-decoration-none text-white">
-                                        prasad@chekkeraproperties.com</a>
+                                <li><i class="fa-solid fa-envelope"></i><a href="#"
+                                        class="text-decoration-none text-white"></a>
                                 </li>
-                                <li><i class="fa-solid fa-envelope"></i><a href="mailto:chekkerafrontline@gmail.com"
-                                        class="text-decoration-none text-white">
-                                        chekkerafrontline@gmail.com</a>
+                                <li><i class="fa-solid fa-envelope"></i><a href="#"
+                                        class="text-decoration-none text-white"></a>
                                 </li>
                                 <li><i class="fa-brands fa-whatsapp"></i><a href="#"
-                                        class="text-decoration-none text-white"> +91 99865 07655 / +91 96067 65596</a>
+                                        class="text-decoration-none text-white"></a>
                                 </li>
                             </ul>
                         </div>
@@ -189,6 +185,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
         integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous">
